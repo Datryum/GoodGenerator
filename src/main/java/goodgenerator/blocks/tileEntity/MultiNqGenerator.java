@@ -366,35 +366,35 @@ public class MultiNqGenerator extends GT_MetaTileEntity_TooltipMultiBlockBase_EM
     protected GT_Multiblock_Tooltip_Builder createTooltip() {
         final GT_Multiblock_Tooltip_Builder tt = new GT_Multiblock_Tooltip_Builder();
         tt.addMachineType("Naquadah Reactor").addInfo("Controller block for the Naquadah Reactor")
-                .addInfo("Environmental Friendly!").addInfo("Generate power with the High-energy liquid.")
+                .addInfo("Environmentally Friendly!").addInfo("Generate power with High-Energy liquids.")
                 .addInfo(
                         String.format(
-                                "Consume liquid air %d L/s to keep running, otherwise" + EnumChatFormatting.YELLOW
+                                "Consumes liquid air %d L/s to keep running, otherwise" + EnumChatFormatting.YELLOW
                                         + " it will void your fuel"
                                         + EnumChatFormatting.GRAY
                                         + ".",
                                 LiquidAirConsumptionPerSecond))
                 .addInfo("Input liquid nuclear fuel or liquid naquadah fuel.")
                 .addInfo(
-                        "The reactor will explode when there are more than" + EnumChatFormatting.RED
+                        "The reactor will explode when there is more than" + EnumChatFormatting.RED
                                 + " ONE"
                                 + EnumChatFormatting.GRAY
-                                + " types of fuel in the hatch!")
-                .addInfo("Consume coolant 1000 L/s to increase the efficiency:")
+                                + " type of fuel in the hatch!")
+                .addInfo("Consumes coolant 1000 L/s to increase the efficiency:")
                 .addInfo(
                         String.format(
                                 "IC2 Coolant %d%%, Super Coolant %d%%, Cryotheum %d%%",
                                 CoolantEfficiency[2],
                                 CoolantEfficiency[1],
                                 CoolantEfficiency[0]))
-                .addInfo("Consume excited liquid to increase the output power:")
+                .addInfo("Consumes excited liquid to increase the power output:")
                 .addInfo(String.format("molten caesium | %dx power | 180 L/s ", ExcitedLiquidCoe[3]))
                 .addInfo(String.format("molten uranium-235 | %dx power | 180 L/s", ExcitedLiquidCoe[2]))
                 .addInfo(String.format("molten naquadah | %dx power | 20 L/s", ExcitedLiquidCoe[1]))
                 .addInfo(String.format("molten Atomic Separation Catalyst | %dx power | 20 L/s", ExcitedLiquidCoe[0]))
                 .addInfo("The structure is too complex!").addInfo(BLUE_PRINT_INFO).addSeparator()
                 .beginStructureBlock(7, 8, 7, true).addController("Front bottom")
-                .addDynamoHatch("Any bottom layer casing, only accept ONE!").addInputHatch("Any bottom layer casing")
+                .addDynamoHatch("Any bottom layer casing, only accepts ONE!").addInputHatch("Any bottom layer casing")
                 .addOutputHatch("Any bottom layer casing").addMaintenanceHatch("Any bottom layer casing")
                 .toolTipFinisher("Good Generator");
         return tt;
