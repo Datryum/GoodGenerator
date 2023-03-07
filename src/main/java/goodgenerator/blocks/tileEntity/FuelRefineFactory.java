@@ -156,14 +156,14 @@ public class FuelRefineFactory extends GT_MetaTileEntity_TooltipMultiBlockBase_E
     protected GT_Multiblock_Tooltip_Builder createTooltip() {
         final GT_Multiblock_Tooltip_Builder tt = new GT_Multiblock_Tooltip_Builder();
         tt.addMachineType("Naquadah Fuel Refinery").addInfo("Controller block for the Naquadah Fuel Refinery")
-                .addInfo("But at what cost?").addInfo("Produce the endgame naquadah fuel.")
-                .addInfo("Need field restriction coil to control the fatal radiation.")
-                .addInfo("Use higher tier coil to unlock more fuel and reduce the process time.")
+                .addInfo("But at what cost?").addInfo("Produces endgame naquadah fuel.")
+                .addInfo("Needs field restriction coils to control the fatal radiation.")
+                .addInfo("Use higher tier coils to unlock more fuels and reduce the process time.")
                 .addInfo("The structure is too complex!").addInfo(BLUE_PRINT_INFO).addSeparator()
-                .beginStructureBlock(3, 15, 15, false).addInputHatch("The casings adjoin the field restriction glass.")
-                .addInputBus("The casings adjoin the field restriction glass.")
-                .addOutputHatch("The casings adjoin the field restriction glass.")
-                .addEnergyHatch("The casings adjoin the field restriction glass.").toolTipFinisher("Good Generator");
+                .beginStructureBlock(3, 15, 15, false).addInputHatch("The casings adjacent to the field restriction glass.")
+                .addInputBus("The casings adjacent to the field restriction glass.")
+                .addOutputHatch("The casings adjacent to the field restriction glass.")
+                .addEnergyHatch("The casings adjacent to the field restriction glass.").toolTipFinisher("Good Generator");
         return tt;
     }
 
